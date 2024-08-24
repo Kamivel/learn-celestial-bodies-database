@@ -106,3 +106,4 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql -U postgres < universe.sql
 \c
 psql --username=freecodecamp --dbname=postgres
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
